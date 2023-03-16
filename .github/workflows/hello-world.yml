@@ -1,9 +1,9 @@
 name: hello-world
 
 on: push
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: ls -la
       - run: make say-hello
